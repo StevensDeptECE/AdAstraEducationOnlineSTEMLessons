@@ -1,0 +1,23 @@
+function setup() {
+  createCanvas(600, 500);
+}
+
+
+
+function draw() {  
+  fill(255,0,0);
+//  stroke(255, 127,127);
+  stroke("#ffff00");
+  strokeWeight(5);
+  rect(0,0,50,50);
+  fill(0,0,255);
+  noStroke();
+  triangle(300,200, 320,250, 280,250);
+  fill(0,255,0);
+  
+  triangle(100,100, 200,200, 300,300);
+  quad(100,100, 200,100, 100,200, 200,200); // messed up order!
+
+  quad(100,400, 200,400, 200,499, 100,499); // messed up order!
+
+}
