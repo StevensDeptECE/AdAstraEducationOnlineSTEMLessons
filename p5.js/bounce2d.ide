@@ -1,0 +1,21 @@
+function setup() {
+  createCanvas(600, 600);
+}
+
+var x = 0, y = 0;
+var speedx = 2, speedy = 4;
+function draw() {
+  background(220);
+  rect(x, y, 50,50);
+  x = x + speedx;
+  y = y + speedy;
+  if (x > 600) {
+    speedx = -speedx;
+  }
+  if (x < 0) {
+    speedx = -speedx;
+  }
+  if (y > height || y < 0) {
+    speedy = -speedy;
+  }
+}
